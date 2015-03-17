@@ -1,0 +1,14 @@
+doctype html
+html
+    != partial("_partials/_head")
+    body
+        section(class='')
+            != partial("_partials/_nav-main")
+            article(class='row content-wrapper', role='main')
+                != yield
+
+        script(src='js/vendor/jquery.js')
+        script(src='js/foundation/foundation.js')
+        <script src="js/foundation/foundation.topbar.js"></script>
+
+        script $(document).foundation();

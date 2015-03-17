@@ -1,0 +1,11 @@
+{
+  "get-started-with-civic-hacking": {
+    "layout": "_layout-sub",
+    "title": "Get Started with Civic Hacking",
+    "description": "Check out projects, open issues and ideas to get you started with civic hacking"
+  },
+  "about-code-for-miami": {
+    "title": "About Code for Miami",
+    "description": "Code for Miami is a Code for America brigade advocating for open data from local Miami governments and creating apps and resources with it."
+  }
+}
