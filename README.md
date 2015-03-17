@@ -1,4 +1,9 @@
-## Docs
+## Getting started
+
+1. sudo npm install -g harp
+2. harp server --port 9000
+
+## Dependencies
 
 -IA: https://docs.google.com/a/codeforamerica.org/document/d/1ac8lH9SU6Mz4QhkUoHOeRwUWqXrSnHM34pKIHSKYG70/edit#heading=h.j1uw506am9e9
 -HarpJs: http://harpjs.com/docs
