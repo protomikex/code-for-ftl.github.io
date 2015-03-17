@@ -1,0 +1,188 @@
+@import "settings";
+@import "foundation";
+
+$font-headings: "Effra";
+
+//
+// Elements
+////////////////////////
+
+body {
+  background-color: $white-smoke;
+  color: $jet;
+}
+
+// Headings
+h1, h2, h3, h4, h5 {
+  font-family: $font-headings, "Helvetica Neue", helvetica, arial, sans-serif;
+}
+h2 {
+  font-weight: 300;
+  color: $secondary-color;
+}
+h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+a {
+  color: $secondary-color;
+}
+
+small {
+  font-size: 85%;
+}
+
+//
+// UI Elements
+//////////////////////////
+
+.icon-small {
+  width: 20px;
+  height: 20px;
+  vertical-align: text-top;
+}
+
+.icon-medium {
+  width: 48px;
+  height: 48px;
+}
+.icon-large {
+  width: 64px;
+  height: 64px;
+}
+
+.main-cta {
+  padding: 3em 0;
+  border-bottom: 1px solid $gainsboro;
+  box-shadow: 0 1px 0 $white;
+  background-size: cover;
+  > div {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  h2 {
+    line-height: 1em;
+    margin-bottom: 0;
+    font-family: "Cubano", sans-serif;
+    font-size: 10vw;
+    text-transform: none;
+    color: $jet;
+  }
+  p {
+    font-family: $font-headings;
+    font-size: 5vw;
+    font-weight: 300;
+  }
+}
+
+.content-wrapper {
+  padding-top: 2em;
+}
+
+.block-primary {
+  padding-bottom: 3em;
+  h2 {
+    text-align: center;
+  }
+  .block-heading {
+    margin-bottom: 1em;
+    border: 0;
+    box-shadow: none;
+  }
+  p {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    font-family: serif;
+    font-style: oblique;
+    font-size: 1.125em;
+    color: #666;
+  }
+}
+
+.row-intro {
+  padding-bottom: 1em;
+  h2 {
+
+  }
+  p {
+    font-family: serif;
+  }
+}
+
+.block-heading {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid $gainsboro;
+  box-shadow: 0 1px 0 $white;
+  text-align: center;
+}
+
+.row-whatwedo {
+  padding: 1.5em 1em;
+  background-color: #eee;
+}
+
+.main-footer {
+  text-align: center;
+  color: #666;
+}
+
+.block-partners {
+  padding: 2em 1em 1em;
+  img {
+    padding: 1em;
+  }
+}
+
+//
+// Video
+///////////////////////////////
+.video-wrapper {
+  position: relative;
+  height: 0;
+  margin: 1em 0 1.25rem;
+  padding-bottom: 75%;
+  overflow: hidden;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+//
+// Helpers
+//////////////////////////////
+.text-centered {
+  text-align: center;
+}
+
+//
+// Foundation Overrides
+///////////////////////////////
+
+// Topbar
+
+.top-bar {
+  border-bottom: 1px solid $gainsboro;
+  box-shadow: 0 1px 0 $white;
+}
+.top-bar-section {
+  .dropdown li {
+    text-align: left;
+  }
+}
+
+@media all and (min-width: 64em) {
+  .main-cta {
+    h2 {
+      font-size: 7vw;
+    }
+    p {
+      font-size: 3vw;
+    }
+  }
+}
