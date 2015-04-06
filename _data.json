@@ -7,5 +7,9 @@
   "about-code-for-miami": {
     "title": "About Code for Miami",
     "description": "Code for Miami is a Code for America brigade advocating for open data from local Miami governments and creating apps and resources with it."
+  },
+  "civic-hacking-101": {
+    "title": "Civic Hacking 101",
+    "description": "Civic hacking is for everyone, learn how you can contribute to your city."
   }
 }
