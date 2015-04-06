@@ -4968,7 +4968,7 @@ body {
 
 /* line 16, ../_assets/scss/app.scss */
 h1, h2, h3, h4, h5 {
-  font-family: "Effra", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-family: "Effra", sans-serif, "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
 /* line 19, ../_assets/scss/app.scss */
