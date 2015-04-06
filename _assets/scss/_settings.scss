@@ -1367,9 +1367,9 @@ $topbar-link-bg-hover: $topbar-bg;
 // Style the top bar dropdown elements
 // $topbar-dropdown-bg: $oil;
 // $topbar-dropdown-link-color: $white;
-// $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
+$topbar-dropdown-link-color-hover: $white;
 // $topbar-dropdown-link-bg: $oil;
-// $topbar-dropdown-link-bg-hover: $oil;
+$topbar-dropdown-link-bg-hover: darken($jet, 2);
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
 $topbar-dropdown-toggle-color: $secondary-color;

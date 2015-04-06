@@ -3565,9 +3565,9 @@ meta.foundation-mq-topbar {
   }
   /* line 608, ../_assets/scss/foundation/components/_top-bar.scss */
   .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
-    color: #222222;
+    color: #FFFFFF;
     background-color: #555555;
-    background: #333333;
+    background: #1d1d1d;
   }
   /* line 617, ../_assets/scss/foundation/components/_top-bar.scss */
   .top-bar-section .dropdown li label {
