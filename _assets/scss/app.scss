@@ -52,6 +52,10 @@ small {
   height: 64px;
 }
 
+.block {
+  padding-bottom: 2rem; // TODO: Make margin after fixing specificity
+}
+
 .main-cta {
   padding: 3em 0;
   border-bottom: 1px solid $gainsboro;
