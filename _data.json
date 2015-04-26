@@ -1,23 +1,25 @@
 {
-  "index": {
-    "header_text": "We love Miami.",
-    "subheader_text": "Let's make it better, together."
+  // _layout.jade (header)
+  "about-code-for-miami": {
+    "title": "About Code for Miami",
+    "header_text": "About Us",
+    "description": "Code for Miami is a Code for America brigade advocating for open data from local Miami governments and creating apps and resources with it."
   },
   "get-started-with-civic-hacking": {
     "header_text": "get Started",
     "title": "Get Started with Civic Hacking",
     "description": "Check out projects, open issues and ideas to get you started with civic hacking"
   },
-  "about-code-for-miami": {
-    "title": "About Code for Miami",
-    "header_text": "About Us",
-    "description": "Code for Miami is a Code for America brigade advocating for open data from local Miami governments and creating apps and resources with it."
+  "index": {
+    "header_text": "We love Miami.",
+    "subheader_text": "Let's make it better, together."
   },
   "civic-hacking-101": {
     "title": "Civic Hacking 101",
     "header_text": "Civic Hacking 101",
     "description": "Civic hacking is for everyone, learn how you can contribute to your city."
   },
+  // _layout-angular.jade (header + angular)
   "open-issues": {
     "layout": "_layout-angular",
     "title": "Open Issues",
@@ -30,4 +32,5 @@
     "description": "",
     "header_text": "Projects"
   }
+  // _layout-sub.jade (no header)
 }
