@@ -1,15 +1,21 @@
 {
+  "index": {
+    "header_text": "We love Miami.",
+    "subheader_text": "Let's make it better, together."
+  },
   "get-started-with-civic-hacking": {
-    "layout": "_layout-sub",
+    "header_text": "get Started",
     "title": "Get Started with Civic Hacking",
     "description": "Check out projects, open issues and ideas to get you started with civic hacking"
   },
   "about-code-for-miami": {
     "title": "About Code for Miami",
+    "header_text": "About Us",
     "description": "Code for Miami is a Code for America brigade advocating for open data from local Miami governments and creating apps and resources with it."
   },
   "civic-hacking-101": {
     "title": "Civic Hacking 101",
+    "header_text": "Civic Hacking 101",
     "description": "Civic hacking is for everyone, learn how you can contribute to your city."
   }
 }
