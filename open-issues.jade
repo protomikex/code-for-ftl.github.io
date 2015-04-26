@@ -1,0 +1,36 @@
+div(id="open-issues" class="container" ng-controller="issueController" ng-cloak)
+    section(class="row")
+        div(class="large-8 columns")
+            div(class="fade-in", ng-repeat="project in projects")
+                div(ng-repeat="issue in project.issues | filter: projectsFilter | filter: issueTypeFilter | filter: issueKeywordFilter | orderBy: 'project.name'")
+                    div(class="issue-info")
+                        h4(class="issue-title")
+                            a(href="{{issue.html_url}}") {{issue.title}}
+                        small Project: <a href="{{project.code_url}}"> {{project.name}}
+                    span(ng-repeat="label in issue.labels", class="label radius issue-label", style="background-color: #{{label.color}};") {{label.name}}
+                    hr(class="hr-emboss")
+
+        div(class="large-4 columns")
+            div
+                select(ng-model="projectsFilter")
+                    option(value="") Filter by project
+                    <option ng-repeat="project in projects | orderBy: 'name'"  value="{{project.name}}">{{project.name}} ({{project.issues.length}})
+            div
+                select(ng-model="issueTypeFilter")
+                    option(value="") Filter issues
+                    option(value="backend") Backend
+                    option(value="beginner") Beginner
+                    option(value="bug") Bug
+                    option(value="content") Content
+                    option(value="design") Design
+                    option(value="documentation") Documentation
+                    option(value="enhancement") Enhancement
+                    option(value="feature") Feature
+                    option(value="frontend") Frontend
+                    option(value="help wanted") Help Wanted
+                    option(value="idea") Idea
+                    option(value="question") Question
+                    option(value="ui") UI
+                    option(value="ux") UX
+            div
+                input(type="text" ng-model="issueKeywordFilter" placeholder="filter by keyword")

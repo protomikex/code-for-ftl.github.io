@@ -33,6 +33,15 @@ small {
   font-size: 85%;
 }
 
+hr {
+  border: 0;
+  border-top: 1px solid $gainsboro;
+}
+
+.hr-emboss {
+  box-shadow: 0 1px 0 $white;
+}
+
 //
 // UI Elements
 //////////////////////////
@@ -136,6 +145,22 @@ small {
   padding: 2em 1em 1em;
   img {
     padding: 1em;
+  }
+}
+
+.project-contributor-avatar {
+  max-width: 48px;
+}
+
+.project-name,
+.issue-title {
+  font-size: 1.25rem;
+}
+.issue-label {
+  margin-left: .5rem;
+
+  &:first-of-type {
+    margin-left: 0;
   }
 }
 

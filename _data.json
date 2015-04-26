@@ -17,5 +17,17 @@
     "title": "Civic Hacking 101",
     "header_text": "Civic Hacking 101",
     "description": "Civic hacking is for everyone, learn how you can contribute to your city."
+  },
+  "open-issues": {
+    "layout": "_layout-angular",
+    "title": "Open Issues",
+    "description": "",
+    "header_text": "Open Issues"
+  },
+  "projects": {
+    "layout": "_layout-angular",
+    "title": "Projects",
+    "description": "",
+    "header_text": "Projects"
   }
 }

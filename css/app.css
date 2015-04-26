@@ -2389,6 +2389,56 @@ button::-moz-focus-inner {
     display: inline-block;
   }
 }
+/* line 91, ../_assets/scss/foundation/components/_labels.scss */
+.label {
+  font-weight: normal;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  margin-bottom: auto;
+  padding: 0.25rem 0.5rem 0.25rem;
+  font-size: 0.6875rem;
+  background-color: #baea15;
+  color: #FFFFFF;
+}
+/* line 96, ../_assets/scss/foundation/components/_labels.scss */
+.label.radius {
+  border-radius: 3px;
+}
+/* line 97, ../_assets/scss/foundation/components/_labels.scss */
+.label.round {
+  border-radius: 1000px;
+}
+/* line 99, ../_assets/scss/foundation/components/_labels.scss */
+.label.alert {
+  background-color: #f04124;
+  color: #FFFFFF;
+}
+/* line 100, ../_assets/scss/foundation/components/_labels.scss */
+.label.warning {
+  background-color: #f08a24;
+  color: #FFFFFF;
+}
+/* line 101, ../_assets/scss/foundation/components/_labels.scss */
+.label.success {
+  background-color: #43AC6A;
+  color: #FFFFFF;
+}
+/* line 102, ../_assets/scss/foundation/components/_labels.scss */
+.label.secondary {
+  background-color: #19c8c6;
+  color: #FFFFFF;
+}
+/* line 103, ../_assets/scss/foundation/components/_labels.scss */
+.label.info {
+  background-color: #a0d3e8;
+  color: #333333;
+}
+
 /* Standard Forms */
 /* line 380, ../_assets/scss/foundation/components/_forms.scss */
 form {
@@ -4993,43 +5043,54 @@ small {
   font-size: 85%;
 }
 
-/* line 40, ../_assets/scss/app.scss */
+/* line 36, ../_assets/scss/app.scss */
+hr {
+  border: 0;
+  border-top: 1px solid #DDDDDD;
+}
+
+/* line 41, ../_assets/scss/app.scss */
+.hr-emboss {
+  box-shadow: 0 1px 0 #FFFFFF;
+}
+
+/* line 49, ../_assets/scss/app.scss */
 .icon-small {
   width: 20px;
   height: 20px;
   vertical-align: text-top;
 }
 
-/* line 46, ../_assets/scss/app.scss */
+/* line 55, ../_assets/scss/app.scss */
 .icon-medium {
   width: 48px;
   height: 48px;
 }
 
-/* line 50, ../_assets/scss/app.scss */
+/* line 59, ../_assets/scss/app.scss */
 .icon-large {
   width: 64px;
   height: 64px;
 }
 
-/* line 55, ../_assets/scss/app.scss */
+/* line 64, ../_assets/scss/app.scss */
 .block {
   padding-bottom: 2rem;
 }
 
-/* line 59, ../_assets/scss/app.scss */
+/* line 68, ../_assets/scss/app.scss */
 .main-cta {
   padding: 3em 0;
   border-bottom: 1px solid #DDDDDD;
   box-shadow: 0 1px 0 #FFFFFF;
   background-size: cover;
 }
-/* line 64, ../_assets/scss/app.scss */
+/* line 73, ../_assets/scss/app.scss */
 .main-cta > div {
   max-width: 90%;
   margin: 0 auto;
 }
-/* line 68, ../_assets/scss/app.scss */
+/* line 77, ../_assets/scss/app.scss */
 .main-cta h2 {
   line-height: 1em;
   margin-bottom: 0;
@@ -5038,33 +5099,33 @@ small {
   text-transform: none;
   color: #222222;
 }
-/* line 76, ../_assets/scss/app.scss */
+/* line 85, ../_assets/scss/app.scss */
 .main-cta p {
   font-family: "Effra", sans-serif;
   font-size: 5vw;
   font-weight: 300;
 }
 
-/* line 83, ../_assets/scss/app.scss */
+/* line 92, ../_assets/scss/app.scss */
 .content-wrapper {
   padding-top: 2em;
 }
 
-/* line 87, ../_assets/scss/app.scss */
+/* line 96, ../_assets/scss/app.scss */
 .block-primary {
   padding-bottom: 3em;
 }
-/* line 89, ../_assets/scss/app.scss */
+/* line 98, ../_assets/scss/app.scss */
 .block-primary h2 {
   text-align: center;
 }
-/* line 92, ../_assets/scss/app.scss */
+/* line 101, ../_assets/scss/app.scss */
 .block-primary .block-heading {
   margin-bottom: 1em;
   border: 0;
   box-shadow: none;
 }
-/* line 97, ../_assets/scss/app.scss */
+/* line 106, ../_assets/scss/app.scss */
 .block-primary p {
   max-width: 90%;
   margin: 0 auto;
@@ -5075,16 +5136,16 @@ small {
   color: #666;
 }
 
-/* line 108, ../_assets/scss/app.scss */
+/* line 117, ../_assets/scss/app.scss */
 .row-intro {
   padding-bottom: 1em;
 }
-/* line 113, ../_assets/scss/app.scss */
+/* line 122, ../_assets/scss/app.scss */
 .row-intro p {
   font-family: serif;
 }
 
-/* line 118, ../_assets/scss/app.scss */
+/* line 127, ../_assets/scss/app.scss */
 .block-heading {
   padding-bottom: 0.5em;
   border-bottom: 1px solid #DDDDDD;
@@ -5092,28 +5153,48 @@ small {
   text-align: center;
 }
 
-/* line 125, ../_assets/scss/app.scss */
+/* line 134, ../_assets/scss/app.scss */
 .row-whatwedo {
   padding: 1.5em 1em;
   background-color: #eee;
 }
 
-/* line 130, ../_assets/scss/app.scss */
+/* line 139, ../_assets/scss/app.scss */
 .main-footer {
   text-align: center;
   color: #666;
 }
 
-/* line 135, ../_assets/scss/app.scss */
+/* line 144, ../_assets/scss/app.scss */
 .block-partners {
   padding: 2em 1em 1em;
 }
-/* line 137, ../_assets/scss/app.scss */
+/* line 146, ../_assets/scss/app.scss */
 .block-partners img {
   padding: 1em;
 }
 
-/* line 145, ../_assets/scss/app.scss */
+/* line 151, ../_assets/scss/app.scss */
+.project-contributor-avatar {
+  max-width: 48px;
+}
+
+/* line 155, ../_assets/scss/app.scss */
+.project-name,
+.issue-title {
+  font-size: 1.25rem;
+}
+
+/* line 159, ../_assets/scss/app.scss */
+.issue-label {
+  margin-left: .5rem;
+}
+/* line 162, ../_assets/scss/app.scss */
+.issue-label:first-of-type {
+  margin-left: 0;
+}
+
+/* line 170, ../_assets/scss/app.scss */
 .video-wrapper {
   position: relative;
   height: 0;
@@ -5122,7 +5203,7 @@ small {
   overflow: hidden;
 }
 
-/* line 152, ../_assets/scss/app.scss */
+/* line 177, ../_assets/scss/app.scss */
 .video-wrapper iframe {
   position: absolute;
   top: 0;
@@ -5131,28 +5212,28 @@ small {
   height: 100%;
 }
 
-/* line 163, ../_assets/scss/app.scss */
+/* line 188, ../_assets/scss/app.scss */
 .text-centered {
   text-align: center;
 }
 
-/* line 173, ../_assets/scss/app.scss */
+/* line 198, ../_assets/scss/app.scss */
 .top-bar {
   border-bottom: 1px solid #DDDDDD;
   box-shadow: 0 1px 0 #FFFFFF;
 }
 
-/* line 178, ../_assets/scss/app.scss */
+/* line 203, ../_assets/scss/app.scss */
 .top-bar-section .dropdown li {
   text-align: left;
 }
 
 @media all and (min-width: 64em) {
-  /* line 185, ../_assets/scss/app.scss */
+  /* line 210, ../_assets/scss/app.scss */
   .main-cta h2 {
     font-size: 7vw;
   }
-  /* line 188, ../_assets/scss/app.scss */
+  /* line 213, ../_assets/scss/app.scss */
   .main-cta p {
     font-size: 3vw;
   }

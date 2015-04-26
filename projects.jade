@@ -1,0 +1,31 @@
+div(id="open-issues", class="container", ng-controller="issueController" ng-cloak)
+    section(class="row")
+        // Results
+        div(class="large-8 columns")
+            div(class="fade-in", ng-repeat="project in projects | filter: languageFilter | filter: keywordFilter | orderBy: 'project.name'")
+                div(class="project-info")
+                    h4(class="project-name")
+                        a(href="{{project.html_url}}") {{project.name}}
+                    p {{project.description}}
+                    p Open issues: {{project.github_details.open_issues}}
+                    p Last updated: {{project.last_updated | date : format : timezone}}
+                    p(ng-if="project.github_details.language") Language: {{project.github_details.language}}
+                    a(ng-if="project.github_details.homepage", href="{{project.github_details.homepage}}", class="button small") visit site
+                    a(href="projects/{{project.github_details.id}}", class="button small") update
+                img(ng-repeat="contributor in project.github_details.contributors", ng-src="{{contributor.avatar_url}}", class="project-contributor-avatar")
+                hr(class="hr-emboss")
+
+        // Filter Results
+        div(class="large-4 columns")
+            div
+                select(ng-model="languageFilter")
+                    option(value="") Filter language
+                    option(value="css") CSS
+                    option(value="groovy") Groovy
+                    option(value="html") HTML
+                    option(value="javascript") JavaScript
+                    option(value="php") PHP
+                    option(value="python") Python
+                    option(value="ruby") Ruby
+            div
+                input(type="text", ng-model="keywordFilter", placeholder="filter by keyword, GitHub user...")
