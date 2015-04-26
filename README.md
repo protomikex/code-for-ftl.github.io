@@ -10,6 +10,11 @@
 - Jade Lang: http://jade-lang.com/
 - Zurb Foundation: http://foundation.zurb.com/docs
 
+## Adding a page
+
+1. Add page to _data.json
+2. Add jade template in root directory
+
 ## Thanks and Attribution
 
 ### Icons
