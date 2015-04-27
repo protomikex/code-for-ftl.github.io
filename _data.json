@@ -1,5 +1,4 @@
 {
-  // _layout.jade (header)
   "about-code-for-miami": {
     "title": "About Code for Miami",
     "header_text": "About Us",
@@ -19,7 +18,6 @@
     "header_text": "Civic Hacking 101",
     "description": "Civic hacking is for everyone, learn how you can contribute to your city."
   },
-  // _layout-angular.jade (header + angular)
   "open-issues": {
     "layout": "_layout-angular",
     "title": "Open Issues",
@@ -32,5 +30,4 @@
     "description": "",
     "header_text": "Projects"
   }
-  // _layout-sub.jade (no header)
 }
