@@ -1,4 +1,4 @@
-div(id="open-issues", class="container", ng-controller="issueController" ng-cloak)
+div(id="open-issues", class="container", ng-controller="ProjectsController as model" ng-cloak)
 
     div(class="row")
 
@@ -28,7 +28,7 @@ div(id="open-issues", class="container", ng-controller="issueController" ng-cloa
 
             ul(class="small-block-grid-2")
 
-                li(class="fade-in panel", ng-repeat="project in projects | filter: languageFilter | filter: userFilter | orderBy: 'project.name'")
+                li(class="fade-in panel", ng-repeat="project in model.projects | filter: languageFilter | filter: userFilter | orderBy: 'project.name'")
                     div(class="row")
                         div(class="project-info large-6 columns")
                             h4(class="project-name")

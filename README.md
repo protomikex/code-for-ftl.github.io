@@ -1,7 +1,8 @@
 ## Getting started
 
 1. sudo npm install -g harp
-2. harp server --port 9000
+2. in project directory: npm install
+3. in project directory: harp server --port 9000
 
 ## Dependencies
 

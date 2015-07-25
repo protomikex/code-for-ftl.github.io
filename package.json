@@ -4,6 +4,7 @@
   "description": "Open Issues from Code for America API",
   "main": "js/app.js",
   "dependencies": {
+    "angular": "^1.4.3",
     "angular-loading-bar": "^0.6.0"
   },
   "scripts": {
