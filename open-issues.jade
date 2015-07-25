@@ -1,7 +1,7 @@
 div(id="open-issues" class="container" ng-controller="ProjectsController as model" ng-cloak)
     section(class="row")
         div(class="large-8 columns")
-            div(class="fade-in", ng-repeat="project in model.projects")
+            div(class="fade-in", ng-repeat="project in model.projects | orderBy: 'name'")
                 div(ng-repeat="issue in project.issues | filter: projectsFilter | filter: issueTypeFilter | filter: issueKeywordFilter | orderBy: 'project.name'")
                     div(class="issue-info")
                         h4(class="issue-title")

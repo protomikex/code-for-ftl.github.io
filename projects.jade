@@ -45,11 +45,10 @@ div(id="open-issues", class="container", ng-controller="ProjectsController as mo
                                 li
                                     small <strong>Last updated</strong>: {{project.last_updated}}
 
-                        div(class="large-6 columns")
+                        div(class="large-6 columns", ng-show="project.github_details.contributors")
                             h5 Contributors
-                            a(ng-href="{{contributor.html_url}}", ng-repeat="contributor in project.github_details.contributors | limitTo: 16", class="th")
+                            a(ng-href="{{contributor.html_url}}", ng-repeat="contributor in project.github_details.contributors | limitTo: 16 | orderBy: '-contributions'", class="th")
                                 img(ng-src="{{contributor.avatar_url}}", class="project-contributor-avatar")
-
                             div
                                 a(ng-if="project.github_details.homepage", ng-href="{{project.github_details.homepage}}") Visit site
                                 a(ng-href="projects/{{project.github_details.html_url}}") GitHub
