@@ -22,3 +22,5 @@
 - Axe | Created by Anton Gajdosik | http://thenounproject.com/term/axe/42164/
 - Arrow | Created by Zlatko Najdenovski | http://thenounproject.com/term/pointer/63453/
 - Firefighter | Created by Patrick McDonnell | https://thenounproject.com/icon/77719
+- Palm Tree | Created by Vlad Likh | https://thenounproject.com/search/?q=palm-tree&i=108603
+- Talk Bubble | Created by Joanna Giansanti | https://thenounproject.com/search/?q=talk-bubble&i=15816
