@@ -1,9 +1,17 @@
 (function() {
    'use strict';
 
-    cfmIssuesApp.factory('cfaApi', function($http, $cacheFactory) {
+    cfmIssuesApp.factory('cfaApi', function($http, CacheFactory) {
 
-        var cache = $cacheFactory('projectsCache');
+        var cacheOneHour = 60 * 60 * 1000;
+
+        var cache = CacheFactory('projectsCache', {
+            "storageMode": "localStorage",
+            "maxAge": cacheOneHour,
+            "deleteOnExpire": "aggressive",
+            "recycleFreq": cacheOneHour,
+            "capacity": 10
+        });
 
         var brigadeName = 'Code-for-Miami',
             apiProjectsUrl = 'http://codeforamerica.org/api/organizations/' + brigadeName + '/projects',
@@ -15,9 +23,6 @@
             concatProjects();
 
             function concatProjects(url) {
-                console.log('starting concatProjects');
-                console.log('cache', cache.get('projects'));
-
                 // if no cached data, make http req
                 // else use cache data
                 if (!cache.get('projects')) {
@@ -35,14 +40,12 @@
                             }
 
                             cache.put('projects', projects);
-                            console.log('cache put', cache.get('projects'));
                             callback(projects);
                         })
                         .error(function (err) {
                             console.error(err);
                         });
                 } else {
-                    console.log('getting cache', cache.get('projects'));
                     callback( cache.get('projects') );
                 }
             }

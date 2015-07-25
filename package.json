@@ -5,6 +5,7 @@
   "main": "js/app.js",
   "dependencies": {
     "angular": "^1.4.3",
+    "angular-cache": "^4.3.2",
     "angular-loading-bar": "^0.6.0"
   },
   "scripts": {
