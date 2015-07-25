@@ -1,31 +1,56 @@
 div(id="open-issues", class="container", ng-controller="issueController" ng-cloak)
+
+    div(class="row")
+
+        div(class="large-7 columns")
+
+            div(class="row")
+                // Filter Results
+                div(class="large-6 columns")
+                    select(ng-model="languageFilter")
+                        option(value="") Filter by language
+                        option(value="css") CSS
+                        option(value="groovy") Groovy
+                        option(value="html") HTML
+                        option(value="java") Java
+                        option(value="javascript") JavaScript
+                        option(value="php") PHP
+                        option(value="python") Python
+                        option(value="ruby") Ruby
+                div(class="large-6 columns")
+                    input(type="text", ng-model="userFilter", placeholder="filter by keyword, GitHub user...")
+
+    hr(class="hr-emboss")
+
     section(class="row")
         // Results
-        div(class="large-8 columns")
-            div(class="fade-in", ng-repeat="project in projects | filter: languageFilter | filter: keywordFilter | orderBy: 'project.name'")
-                div(class="project-info")
-                    h4(class="project-name")
-                        a(href="{{project.html_url}}") {{project.name}}
-                    p {{project.description}}
-                    p Open issues: {{project.github_details.open_issues}}
-                    p Last updated: {{project.last_updated | date : format : timezone}}
-                    p(ng-if="project.github_details.language") Language: {{project.github_details.language}}
-                    a(ng-if="project.github_details.homepage", href="{{project.github_details.homepage}}", class="button small") visit site
-                    a(href="projects/{{project.github_details.id}}", class="button small") update
-                img(ng-repeat="contributor in project.github_details.contributors", ng-src="{{contributor.avatar_url}}", class="project-contributor-avatar")
-                hr(class="hr-emboss")
+        div(class="large-12 columns")
 
-        // Filter Results
-        div(class="large-4 columns")
-            div
-                select(ng-model="languageFilter")
-                    option(value="") Filter language
-                    option(value="css") CSS
-                    option(value="groovy") Groovy
-                    option(value="html") HTML
-                    option(value="javascript") JavaScript
-                    option(value="php") PHP
-                    option(value="python") Python
-                    option(value="ruby") Ruby
-            div
-                input(type="text", ng-model="keywordFilter", placeholder="filter by keyword, GitHub user...")
+            ul(class="small-block-grid-2")
+
+                li(class="fade-in panel", ng-repeat="project in projects | filter: languageFilter | filter: userFilter | orderBy: 'project.name'")
+                    div(class="row")
+                        div(class="project-info large-6 columns")
+                            h4(class="project-name")
+                                a(ng-href="{{project.github_details.html_url}}") {{project.name}}
+                            ul(class="no-bullet")
+                                li(ng-if="project.description")
+                                    dl
+                                        dt <strong>Description</strong>
+                                        dd {{project.description}}
+                                li
+                                    small <strong>Open issues</strong>: {{project.github_details.open_issues}}
+                                li(ng-if="project.github_details.language")
+                                    small <strong>Language</strong>: {{project.github_details.language}}
+                                li
+                                    small <strong>Last updated</strong>: {{project.last_updated}}
+
+                        div(class="large-6 columns")
+                            h5 Contributors
+                            a(ng-href="{{contributor.html_url}}", ng-repeat="contributor in project.github_details.contributors | limitTo: 16", class="th")
+                                img(ng-src="{{contributor.avatar_url}}", class="project-contributor-avatar")
+
+                            div
+                                a(ng-if="project.github_details.homepage", ng-href="{{project.github_details.homepage}}") Visit site
+                                a(ng-href="projects/{{project.github_details.html_url}}") GitHub
+                            //a(href="projects/{{project.github_details.id}}") update
