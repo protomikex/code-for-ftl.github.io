@@ -13,8 +13,8 @@ echo 'removing unnecessary files...'
 find . -maxdepth 1 ! -name 'www' ! -name '.*' | xargs rm -rf
 
 echo 'moving build files to root...'
-mv * ../
+rm -rf www/www; mv www/* .
 
 echo 'commiting build...'
-git add -A; git commit - "latest build"
+git add -A; git commit -m "latest build"
 
