@@ -20,8 +20,9 @@
 
 ### Icons
 - Data | Created by Piotrek Chuchla | http://thenounproject.com/term/diagram/21548/
-- Axe | Created by Anton Gajdosik | http://thenounproject.com/term/axe/42164/
+- Cube | Created by Gregor Črešnar | https://thenounproject.com/term/cube/174072/
 - Arrow | Created by Zlatko Najdenovski | http://thenounproject.com/term/pointer/63453/
 - Firefighter | Created by Patrick McDonnell | https://thenounproject.com/icon/77719
 - Palm Tree | Created by Vlad Likh | https://thenounproject.com/search/?q=palm-tree&i=108603
 - Talk Bubble | Created by Joanna Giansanti | https://thenounproject.com/search/?q=talk-bubble&i=15816
+- Console | Created by Arthur Shlain, RU | https://thenounproject.com/term/console/59654/
