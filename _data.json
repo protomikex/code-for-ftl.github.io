@@ -5,6 +5,7 @@
     "description": "Code for Miami is a Code for America brigade advocating for open data from local Miami governments and creating apps and resources with it."
   },
   "get-started-with-civic-hacking": {
+    "layout": "_layout_headings_only",
     "header_text": "get Started",
     "title": "Get Started with Civic Hacking",
     "description": "Check out projects, open issues and ideas to get you started with civic hacking"
