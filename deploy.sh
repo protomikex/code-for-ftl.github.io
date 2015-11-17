@@ -1,7 +1,8 @@
 #!/bin/bash
 
 echo 'removing existing gh-pages branch...'
-git push origin :master; git branch -D master
+#git push origin :master; 
+git branch -D master
 
 echo 'creating gh-pages branch...'
 git checkout --orphan master
