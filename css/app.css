@@ -6350,25 +6350,44 @@ hr {
 }
 
 /* line 97, ../_assets/scss/app.scss */
+.main-cta-blog h2 {
+  font-size: 5vw;
+}
+
+/* line 101, ../_assets/scss/app.scss */
+.blog-subheader {
+  opacity: .5;
+}
+/* line 104, ../_assets/scss/app.scss */
+.blog-subheader span {
+  margin-right: .5rem;
+}
+
+/* line 108, ../_assets/scss/app.scss */
+.main-cta .blog-title {
+  color: #19c8c6;
+}
+
+/* line 112, ../_assets/scss/app.scss */
 .content-wrapper {
   padding-top: 2em;
 }
 
-/* line 101, ../_assets/scss/app.scss */
+/* line 116, ../_assets/scss/app.scss */
 .block-primary {
   padding-bottom: 3em;
 }
-/* line 103, ../_assets/scss/app.scss */
+/* line 118, ../_assets/scss/app.scss */
 .block-primary h2 {
   text-align: center;
 }
-/* line 106, ../_assets/scss/app.scss */
+/* line 121, ../_assets/scss/app.scss */
 .block-primary .block-heading {
   margin-bottom: 1em;
   border: 0;
   box-shadow: none;
 }
-/* line 111, ../_assets/scss/app.scss */
+/* line 126, ../_assets/scss/app.scss */
 .block-primary p {
   margin: 0 auto;
   padding-bottom: 2em;
@@ -6378,16 +6397,16 @@ hr {
   color: #666;
 }
 
-/* line 121, ../_assets/scss/app.scss */
+/* line 136, ../_assets/scss/app.scss */
 .row-intro {
   padding-bottom: 1em;
 }
-/* line 126, ../_assets/scss/app.scss */
+/* line 141, ../_assets/scss/app.scss */
 .row-intro p {
   font-family: serif;
 }
 
-/* line 131, ../_assets/scss/app.scss */
+/* line 146, ../_assets/scss/app.scss */
 .block-heading {
   margin-right: 0.5rem;
   padding-bottom: 0.5em;
@@ -6396,49 +6415,49 @@ hr {
   text-align: center;
 }
 
-/* line 139, ../_assets/scss/app.scss */
+/* line 154, ../_assets/scss/app.scss */
 .row-whatwedo {
   overflow: hidden;
   padding: 1.5em 0;
   background-color: #eee;
 }
 
-/* line 145, ../_assets/scss/app.scss */
+/* line 160, ../_assets/scss/app.scss */
 .main-footer {
   text-align: center;
   color: #666;
 }
 
-/* line 150, ../_assets/scss/app.scss */
+/* line 165, ../_assets/scss/app.scss */
 .block-partners {
   padding: 2em 1em 1em;
 }
-/* line 152, ../_assets/scss/app.scss */
+/* line 167, ../_assets/scss/app.scss */
 .block-partners img {
   padding: 1em;
 }
 
-/* line 157, ../_assets/scss/app.scss */
+/* line 172, ../_assets/scss/app.scss */
 .project-contributor-avatar {
   max-width: 48px;
 }
 
-/* line 161, ../_assets/scss/app.scss */
+/* line 176, ../_assets/scss/app.scss */
 .project-name,
 .issue-title {
   font-size: 1.25rem;
 }
 
-/* line 165, ../_assets/scss/app.scss */
+/* line 180, ../_assets/scss/app.scss */
 .issue-label {
   margin-left: .5rem;
 }
-/* line 168, ../_assets/scss/app.scss */
+/* line 183, ../_assets/scss/app.scss */
 .issue-label:first-of-type {
   margin-left: 0;
 }
 
-/* line 176, ../_assets/scss/app.scss */
+/* line 191, ../_assets/scss/app.scss */
 .video-wrapper {
   position: relative;
   height: 0;
@@ -6447,7 +6466,7 @@ hr {
   overflow: hidden;
 }
 
-/* line 183, ../_assets/scss/app.scss */
+/* line 198, ../_assets/scss/app.scss */
 .video-wrapper iframe {
   position: absolute;
   top: 0;
@@ -6456,81 +6475,86 @@ hr {
   height: 100%;
 }
 
-/* line 194, ../_assets/scss/app.scss */
+/* line 209, ../_assets/scss/app.scss */
 .text-centered {
   text-align: center;
 }
 
-/* line 197, ../_assets/scss/app.scss */
+/* line 212, ../_assets/scss/app.scss */
 .flex-row {
   display: flex;
-  flx-direction: row;
+  flex-direction: row;
 }
 
-/* line 201, ../_assets/scss/app.scss */
+/* line 216, ../_assets/scss/app.scss */
 .flex-wrap {
   flex-wrap: wrap;
 }
 
-/* line 204, ../_assets/scss/app.scss */
+/* line 219, ../_assets/scss/app.scss */
 .flex-stretch-vertical {
   align-items: stretch;
 }
 
-/* line 207, ../_assets/scss/app.scss */
+/* line 222, ../_assets/scss/app.scss */
 .flex-column-2,
 .flex-column-3 {
   padding: 0 .4625em 1em;
 }
 
-/* line 212, ../_assets/scss/app.scss */
+/* line 227, ../_assets/scss/app.scss */
 .flex-column-2 {
   flex: 0 0 50%;
 }
 
-/* line 215, ../_assets/scss/app.scss */
+/* line 230, ../_assets/scss/app.scss */
 .flex-column-3 {
   flex: 0 0 33.33%;
 }
 
-/* line 218, ../_assets/scss/app.scss */
+/* line 233, ../_assets/scss/app.scss */
 .flex-column-4 {
   flex: 0 0 25%;
 }
 
-/* line 228, ../_assets/scss/app.scss */
+/* line 243, ../_assets/scss/app.scss */
 .project-info .th {
   margin: .3em;
 }
 
-/* line 234, ../_assets/scss/app.scss */
+/* line 249, ../_assets/scss/app.scss */
 .panel {
   width: 100%;
 }
 
-/* line 240, ../_assets/scss/app.scss */
+/* line 255, ../_assets/scss/app.scss */
 .top-bar {
   border-bottom: 1px solid #DDDDDD;
   box-shadow: 0 1px 0 #FFFFFF;
 }
 
-/* line 245, ../_assets/scss/app.scss */
+/* line 260, ../_assets/scss/app.scss */
 .top-bar-section .dropdown li {
   text-align: left;
 }
 
 @media all and (min-width: 64em) {
-  /* line 252, ../_assets/scss/app.scss */
+  /* line 267, ../_assets/scss/app.scss */
   .main-cta h2 {
     font-size: 7vw;
   }
-  /* line 255, ../_assets/scss/app.scss */
+  /* line 270, ../_assets/scss/app.scss */
   .main-cta p {
+    font-size: 3vw;
+  }
+
+  /* line 275, ../_assets/scss/app.scss */
+  .main-cta-blog h2 {
     font-size: 3vw;
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 264, ../_assets/scss/app.scss */
+  /* line 284, ../_assets/scss/app.scss */
   .row-project .block-heading,
   .row-whatwedo .block-heading {
     display: inline-block;
@@ -6538,41 +6562,41 @@ hr {
     border-bottom-width: 0;
     box-shadow: none;
   }
-  /* line 270, ../_assets/scss/app.scss */
+  /* line 290, ../_assets/scss/app.scss */
   .row-project .block-heading + h3,
   .row-whatwedo .block-heading + h3 {
     display: inline-block;
   }
 
-  /* line 276, ../_assets/scss/app.scss */
+  /* line 296, ../_assets/scss/app.scss */
   .row-project + .row-project {
     margin-top: 2rem;
   }
 
-  /* line 280, ../_assets/scss/app.scss */
+  /* line 300, ../_assets/scss/app.scss */
   .block-whatwedo {
     margin-top: 2rem;
   }
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 286, ../_assets/scss/app.scss */
+  /* line 306, ../_assets/scss/app.scss */
   .icon-medium {
     width: 48px;
     height: 48px;
   }
 
-  /* line 290, ../_assets/scss/app.scss */
+  /* line 310, ../_assets/scss/app.scss */
   .icon-large {
     width: 64px;
     height: 64px;
   }
 
-  /* line 295, ../_assets/scss/app.scss */
+  /* line 315, ../_assets/scss/app.scss */
   .block-primary p {
     max-width: 90%;
   }
 
-  /* line 299, ../_assets/scss/app.scss */
+  /* line 319, ../_assets/scss/app.scss */
   .row-whatwedo {
     padding: 1.5em 1em;
   }

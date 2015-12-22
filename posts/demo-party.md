@@ -1,0 +1,9 @@
+In the interest of getting in on one of the biggest tech events in Miami’s history, we held our National Day of Civic Hacking a bit early this year at the eMergeAmericas Hackathon. (Imagine that, Miami was EARLY for something for a change!) Some really cool ideas and new civic hackers came out of the event, and we’re excited to continue work on some of the apps prototyped at the hackathon. Here’s what they had to say over at the [National Day of Civic Hacking blog](National Day of Civic Hacking blog):
+
+> The diversity of participants and their energy was incredible. From university professors to software developers, makers and entrepreneurs came together to work on social challenges relating to topics such as connected neighborhoods, distribution of food and resources at the neighborhood level, political transparency in Latin America and disaster preparedness. Projects were created with all sorts of open source software tools but some also by combining sensors and electronics with software in order to create unique maker-type projects.
+
+We’re going to keep celebrating National Day of Civic Hacking throughout the month. Find out how to join in at our [National Day of Civic Hacking page](http://codeformiami.org/hackforchange14/), and be sure to tell us how you hacked for change!
+
+At the end of the month, we’ll celebrate the official National Day of Civic Hacking weekend and our one-year anniversary(!) with a demo day and party. The event will be on Sunday, June 1 from noon to 2 p.m. at the OCinema courtyard in Wynwood. Just RSVP on the Meetup.  We’ll share some food, drinks and birthday cake. Our members will be on hand to talk about what they love about civic hacking and to demo some of the cool things we’ve built this year.
+
+We hope you’ll join us, share your ideas, show off your work, and celebrate one year of hacking together for a better Miami!

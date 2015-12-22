@@ -4,11 +4,15 @@ html
     body
         section(class='')
             != partial("/_partials/_nav-main")
-            != partial("/_partials/_header_headings_only")
+            != partial("/_partials/_blog-header")
             article(class='content-wrapper', role='main')
-                != yield
-
-            != partial("/_partials/_footer")
+                section(class='row block')
+                    div(class='small-12 columns')
+                        //h2 #{ title }
+                        p(class="blog-subheader")
+                            span on <strong>#{ date }</strong>
+                            span by <strong>#{ author }</strong>
+                        != yield
 
         script(src='/js/vendor/jquery.js')
         script(src='/js/vendor/modernizr.js')

@@ -93,6 +93,21 @@ hr {
     font-weight: 300;
   }
 }
+.main-cta-blog {
+  h2 {
+    font-size: 5vw;
+  }
+}
+.blog-subheader {
+  opacity: .5;
+
+  span {
+    margin-right: .5rem;
+  }
+}
+.main-cta .blog-title {
+  color: $secondary-color;
+}
 
 .content-wrapper {
   padding-top: 2em;
@@ -196,7 +211,7 @@ hr {
 }
 .flex-row {
   display: flex;
-  flx-direction: row;
+  flex-direction: row;
 }
 .flex-wrap {
   flex-wrap: wrap;
@@ -253,6 +268,11 @@ hr {
       font-size: 7vw;
     }
     p {
+      font-size: 3vw;
+    }
+  }
+  .main-cta-blog {
+    h2 {
       font-size: 3vw;
     }
   }

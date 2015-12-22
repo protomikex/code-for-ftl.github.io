@@ -1,0 +1,8 @@
+section(class='row block')
+  for post, slug in public.posts._data
+    div(class="small-12 columns")
+      ul
+        li
+          div: a(href="/posts/#{ slug }")= post.title
+          small= post.date
+      //!= partial("posts/" + slug)

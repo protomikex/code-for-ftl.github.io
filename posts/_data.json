@@ -1,0 +1,86 @@
+{
+  "weekly-update-feb-10-2015": {
+  "layout": "../_layout-blog",
+  "title": "Weekly Update",
+  "author": "Maggie Diaz-Vera",
+  "date": "Feb 10, 2014"
+},
+  "weekly-update-feb-17-2015": {
+    "layout": "../_layout-blog",
+    "title": "Weekly Update",
+    "author": "Maggie Diaz-Vera",
+    "date": "Feb 17, 2014"
+  },
+  "whats-open-data": {
+    "layout": "../_layout-blog",
+    "title": "What is Open Data and What Can I Do to Make a Difference?",
+    "author": "Maggie Diaz-Vera",
+    "date": "Feb 21, 2014"
+  },
+  "open-data-jam-recap": {
+    "layout": "../_layout-blog",
+    "title": "Open Data Jam Recap",
+    "author": "@robdotd",
+    "date": "Feb 21, 2014"
+  },
+  "weekly-update-mar-24-2014": {
+    "layout": "../_layout-blog",
+    "title": "Weekly Update",
+    "author": "Maggie Diaz-Vera",
+    "date": "Mar 24, 2014"
+  },
+  "weekly-update-mar-31-2014.md": {
+    "layout": "../_layout-blog",
+    "title": "Weekly Update",
+    "author": "Maggie Diaz-Vera",
+    "date": "Mar 31, 2014"
+  },
+  "cute-pets-launch": {
+    "layout": "../_layout-blog",
+    "title": "PetsToLove Shares Adoptable Pets & Shelter Info On Twitter",
+    "author": "Maggie Diaz-Vera",
+    "date": "May 11, 2014"
+  },
+  "demo-party": {
+    "layout": "../_layout-blog",
+    "title": "National Day of Civic Hacking at eMergeAmericas and Demo Day Party!",
+    "author": "Maggie Diaz-Vera",
+    "date": "May 15, 2014"
+  },
+  "ndoch-2014": {
+    "layout": "../_layout-blog",
+    "title": "NDoCH - Statewide Civic Hacking Challenge",
+    "author": "Maggie Diaz-Vera",
+    "date": "May 19, 2014"
+  },
+  "1st-anniversary": {
+    "layout": "../_layout-blog",
+    "title": "Code for Miami’s Anniversary - National Day of Civic Hacking",
+    "author": "Maggie Diaz-Vera",
+    "date": "Jun 1, 2014"
+  },
+  "weekly-update-jun-19-2014": {
+    "layout": "../_layout-blog",
+    "title": "Weekly Update",
+    "author": "Maggie Diaz-Vera",
+    "date": "Jun 19, 2014"
+  },
+  "weekly-update-jul-3-2014": {
+    "layout": "../_layout-blog",
+    "title": "Commissioner Zapata Visits and Insights from Google I/O",
+    "author": "Maggie Diaz-Vera",
+    "date": "Jul 3, 2014"
+  },
+  "weekly-update-jul-21-2014": {
+    "layout": "../_layout-blog",
+    "title": "Weekly Update",
+    "author": "Maggie Diaz-Vera",
+    "date": "Jul 21, 2014"
+  },
+  "fellowship": {
+    "layout": "../_layout-blog",
+    "title": "Ernie Joins Code for America Fellowship & Welcome New Co-Captain Cristina",
+    "author": "Maggie Diaz-Vera",
+    "date": "Nov 5, 2014"
+  }
+}

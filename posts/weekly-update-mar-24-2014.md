@@ -1,0 +1,12 @@
+This week was a great meeting and it looks like we are getting close to the finishing steps on some of our great projects. We had a full house tonight which was absolutely wonderful. Here is the news on some of our key projects and where we currently stand.
+The Local Business Data Tax Set has been organized thanks to Juan and Emily. Mike Sarsati from Miami Dade County has shown the progress to the City of Miami business tax collector and they were rather impressed by the amount of work in such a short amount of time! Hopefully now they will understand the benefit to making information open! ;D
+
+The new goal with this project is to create a visual map to locate paid vs unpaid taxes by zip code. Let us know if this is something you want to work on!
+
+For Open311, apparently our work was so exceptional, that the code for the main Open311 app is going to be updated to be a little more future-proof for any information that may be submitted later. So while there may be some initial downtime for those improvements, it’s great to know that we are moving forward.
+
+TextMyBus testing is going to be on April 14 during our meeting. 2 groups will meet at Government Center and Dadeland South Station and test the sticker design that has been created. Ben Manley has also made a premilnary promotional video for the TextMyBus app. You can [download it on this thread](https://groups.google.com/forum/#!topic/code-for-miami/2NgR7e4Ry3k). 
+
+We are currently working on creating content for [MiamiWiki](http://miamiwiki.org/). Maggie has drafted a stock letter to send to different local interest groups reaching out about local wiki and how they can contribute. Jeremy Roth stopped by with an idea of making a GPS-based Walking App of Miami that will pull information from MiamiWiki to educate locals and tourists of the geographical area they are in. We are currently looking to add historical content about Miami. As well, feel free to add information about your favorite places and what gives Miami it’s flavor. Anyone can add to it!
+
+So as you can see, we are getting a lot of things moving and it’s thanks to all of our efforts. The more people that contribute, the more we can do! As some of these projects are in their finishing stages, we can now focus our efforts on new projects that could stem from ideas shared during our Open Data Jam.
