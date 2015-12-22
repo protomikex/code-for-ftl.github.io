@@ -16,6 +16,12 @@
 1. Add page to _data.json
 2. Add jade template in root directory
 
+## Writing a Blog Post
+
+1. Create Markdown (.md) file in /posts
+2. Add post's metadata to /posts/_data.json (as first object in object)
+    - metadata object key is the name of the Markdown file
+
 ## Thanks and Attribution
 
 ### Icons
