@@ -23,4 +23,6 @@ echo 'committing build...'
 git add -A; git commit -m "latest build"
 
 echo 'pushing to master...'
-#git push origin master
+git push origin master -f
+
+echo 'It lives...'
