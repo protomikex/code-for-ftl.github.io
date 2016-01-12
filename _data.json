@@ -4,6 +4,12 @@
     "header_text": "About Us",
     "description": "Code for Miami is a Code for America brigade advocating for open data from local Miami governments and creating apps and resources with it."
   },
+  "code-of-conduct": {
+    "layout": "_layout_headings_only",
+    "header_text": "Code of Conduct",
+    "title": "Code of Conduct",
+    "description": "Code for America Code of Conduct"
+  },
   "get-started-with-civic-hacking": {
     "layout": "_layout_headings_only",
     "header_text": "get Started",
