@@ -1,4 +1,10 @@
 {
+  "discotech-maker-faire": {
+    "layout": "../_layout-blog",
+    "title": "Miami's first DiscoTech and demoing at Miami Mini Maker Faire",
+    "author": "Rebekah Monson",
+    "date": "Feb 22, 2016"
+  },
   "fellowship": {
     "layout": "../_layout-blog",
     "title": "Ernie Joins Code for America Fellowship & Welcome New Co-Captain Cristina",
