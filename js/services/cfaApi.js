@@ -14,7 +14,7 @@
         });
 
         var brigadeName = 'Code-for-Miami',
-            apiProjectsUrl = 'http://codeforamerica.org/api/organizations/' + brigadeName + '/projects',
+            apiProjectsUrl = 'https://codeforamerica-api.herokuapp.com/api/organizations/' + brigadeName + '/projects',
             resultnumber,
             projects = [];
 
