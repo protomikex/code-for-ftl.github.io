@@ -1,4 +1,4 @@
-div(id="open-issues" class="container" ng-controller="ProjectsController as model" ng-cloak)
+div(id="open-issues", class="container", ng-controller="ProjectsController as model" ng-cloak)
     section(class="row")
         div(class="large-8 columns")
             div(class="fade-in", ng-repeat="project in model.projects | orderBy: 'name'")
@@ -14,7 +14,7 @@ div(id="open-issues" class="container" ng-controller="ProjectsController as mode
             div
                 select(ng-model="projectsFilter")
                     option(value="") Filter by project
-                    <option ng-repeat="project in model.projects | orderBy: 'name'"  value="{{project.name}}">{{project.name}} ({{project.issues.length}})
+                    option ng-repeat="project in model.projects | orderBy: 'name'"  value="{{project.name}}">{{project.name}} ({{project.issues.length}})
             div
                 select(ng-model="issueTypeFilter")
                     option(value="") Filter issues

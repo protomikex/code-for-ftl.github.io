@@ -1,9 +1,6 @@
 div(id="open-issues", class="container", ng-controller="ProjectsController as model" ng-cloak)
-
     div(class="row")
-
         div(class="large-7 columns")
-
             div(class="row")
                 // Filter Results
                 div(class="large-6 columns")
@@ -13,32 +10,29 @@ div(id="open-issues", class="container", ng-controller="ProjectsController as mo
                     input(type="text", ng-model="userFilter", placeholder="filter by keyword, GitHub user...")
 
     section(class="row")
-
         hr(class="hr-emboss")
 
         // Results
         div(class="large-12 columns")
-
             div(class="flex-row flex-wrap")
+                div(class="flex-column-2 flex-row flex-stretch-vertical fade-in", ng-repeat="project in model.projects | filter: languageFilter | filter: userFilter | orderBy: 'project.name'")
+                    div(class="panel project-info")
+                        h4(class="project-name")
+                            a(ng-href="{{project.github_details.html_url}}") {{project.name}}
 
-                    div(class="flex-column-2 flex-row flex-stretch-vertical fade-in", ng-repeat="project in model.projects | filter: languageFilter | filter: userFilter | orderBy: 'project.name'")
-                        div(class="panel project-info")
-                            h4(class="project-name")
-                                a(ng-href="{{project.github_details.html_url}}") {{project.name}}
+                        ul(class="no-bullet")
+                            li(ng-if="project.description")
+                                dl
+                                    dt <strong>Description</strong>
+                                    dd {{project.description}} <a ng-if="project.github_details.homepage" ng-href="{{project.github_details.homepage}}">Live demo</a>
+                            li
+                                small <strong>Open issues</strong>: {{project.github_details.open_issues}}
+                            li(ng-if="project.github_details.language")
+                                small <strong>Language</strong>: {{project.github_details.language}}
+                            li
+                                small <strong>Last updated</strong>: {{project.last_updated}}
 
-                            ul(class="no-bullet")
-                                li(ng-if="project.description")
-                                    dl
-                                        dt <strong>Description</strong>
-                                        dd {{project.description}} <a ng-if="project.github_details.homepage" ng-href="{{project.github_details.homepage}}">Live demo</a>
-                                li
-                                    small <strong>Open issues</strong>: {{project.github_details.open_issues}}
-                                li(ng-if="project.github_details.language")
-                                    small <strong>Language</strong>: {{project.github_details.language}}
-                                li
-                                    small <strong>Last updated</strong>: {{project.last_updated}}
-
-                            div(ng-show="project.github_details.contributors")
-                                h5 Contributors
-                                a(ng-href="{{contributor.html_url}}", ng-repeat="contributor in project.github_details.contributors | limitTo: 16 | orderBy: '-contributions'", class="th")
-                                    img(ng-src="{{contributor.avatar_url}}", class="project-contributor-avatar")
+                        div(ng-show="project.github_details.contributors")
+                            h5 Contributors
+                            a(ng-href="{{contributor.html_url}}", ng-repeat="contributor in project.github_details.contributors | limitTo: 16 | orderBy: '-contributions'", class="th")
+                                img(ng-src="{{contributor.avatar_url}}", class="project-contributor-avatar")
