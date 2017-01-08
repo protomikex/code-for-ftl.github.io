@@ -22,6 +22,11 @@
 2. Add post's metadata to /posts/_data.json (as first object in object)
     - metadata object key is the name of the Markdown file
 
+## Deploying
+1. Make sure to compile css with either compass or sass
+2. ./deploy.sh
+3. All done
+
 ## Thanks and Attribution
 
 ### Icons
