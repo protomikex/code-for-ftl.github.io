@@ -24,7 +24,7 @@
             model.projects = data;
         });
 
-        model.issues = cfaApi.getIssues().then(function(res) {
+        model.issues = cfaApi.getIssues(model.pageSize).then(function(res) {
             console.log('res', res);
             model.totalCount = res.total_count;
             model.issues = res.items;
