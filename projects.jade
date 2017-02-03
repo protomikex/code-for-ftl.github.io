@@ -36,7 +36,7 @@ div(id="open-issues", class="container", ng-controller="ProjectsController as mo
                                 li(ng-if="project.language")
                                     small <strong>Language</strong>: {{project.language}}
                                 li
-                                    small <strong>Last updated</strong>: {{project.last_updated}}
+                                    small <strong>Last updated</strong>: {{project.updated_at | date}}
 
                             div(ng-show="project.contributors")
                                 h5 Contributors

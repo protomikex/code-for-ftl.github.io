@@ -5,7 +5,7 @@ div(id="open-issues" class="container" ng-controller="ProjectsController as mode
             div
                 div(dir-paginate="issue in model.issues | filter: projectsFilter | filter: issueTypeFilter | filter: issueKeywordFilter | orderBy: 'project.name'| itemsPerPage: model.pageSize" total-items="model.totalCount" current-page="model.currentPage" )
                     div(class="issue-info")
-                        small(class="text-muted") {{issue.updated_on}}
+                        small(class="text-muted") {{issue.updated_at | date}}
                         h4(class="issue-title")
                             a(href="{{issue.html_url}}") {{issue.title}}
                         small Project: <a href="{{issue.repository_url}}"> {{issue.repository_url}}
