@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo 'removing existing gh-pages branch...'
+echo 'removing existing master branch...'
 #git push origin :master; 
 git branch -D master
 
-echo 'creating gh-pages branch...'
+echo 'creating master branch...'
 git checkout --orphan master
 
 echo 'compiling latest...'
@@ -18,6 +18,9 @@ rm -rf www/www; mv www/* .; rm -rf www .sass-cache .idea .gitignore config.rb
 
 echo 'install npm modules...'
 npm install
+
+echo 'create nojekyll file'
+touch .nojekyll
 
 echo 'committing build...'
 git add -A; git commit -m "latest build"

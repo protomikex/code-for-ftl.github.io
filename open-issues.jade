@@ -1,18 +1,20 @@
-div(id="open-issues", class="container", ng-controller="ProjectsController as model" ng-cloak)
+div(id="open-issues" class="container" ng-controller="ProjectsController as model" ng-cloak)
     section(class="row")
         div(class="large-8 columns")
-            div(class="fade-in", ng-repeat="project in model.projects | orderBy: 'name'")
-                div(ng-repeat="issue in project.issues | filter: projectsFilter | filter: issueTypeFilter | filter: issueKeywordFilter | orderBy: 'project.name'")
+            <dir-pagination-controls on-page-change="model.pageChanged(newPageNumber)"></dir-pagination-controls>
+            div
+                div(dir-paginate="issue in model.issues | filter: projectsFilter | filter: issueTypeFilter | filter: issueKeywordFilter | orderBy: 'project.name'| itemsPerPage: model.pageSize" total-items="model.totalCount" current-page="model.currentPage" )
                     div(class="issue-info")
+                        small(class="text-muted") {{issue.updated_on}}
                         h4(class="issue-title")
                             a(href="{{issue.html_url}}") {{issue.title}}
-                        small Project: <a href="{{project.code_url}}"> {{project.name}}
+                        small Project: <a href="{{issue.repository_url}}"> {{issue.repository_url}}
                     span(ng-repeat="label in issue.labels", class="label radius issue-label", style="background-color: #{{label.color}};") {{label.name}}
                     hr(class="hr-emboss")
-
+            <dir-pagination-controls on-page-change="model.pageChanged(newPageNumber)"></dir-pagination-controls>
         div(class="large-4 columns")
             div
-                select(ng-model="projectsFilter", ng-options="project.name as project.name + ' (' + project.issues.length + ')' for project in model.projects | orderBy: 'name'")
+                select(ng-model="projectsFilter" ng-options="project.html_url as project.name + ' (' + project.open_issues + ')' for project in model.projects | orderBy: 'name'")
                     option(value="") Filter by project
             div
                 select(ng-model="issueTypeFilter")

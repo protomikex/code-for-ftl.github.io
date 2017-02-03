@@ -14,7 +14,7 @@
         });
 
         var brigadeName = 'Code-for-Miami',
-            apiProjectsUrl = 'https://codeforamerica-api.herokuapp.com/api/organizations/' + brigadeName + '/projects',
+            apiProjectsUrl = 'https://api.github.com/search/repositories?q=user:Code-for-Miami&per_page=100',
             resultnumber,
             projects = [];
 
@@ -31,10 +31,10 @@
                     $http.get(apiUrl)
                         .success(function (data) {
 
-                            resultnumber = resultnumber + parseInt(data.objects.length);
-                            projects = projects.concat(data.objects);
+                            resultnumber = resultnumber + parseInt(data.items.length);
+                            projects = projects.concat(data.items);
 
-                            if ( data.pages.next ) {
+                            if ( data.pages && data.pages.next ) {
                                 concatProjects(data.pages.next);
                                 return;
                             }
@@ -49,11 +49,27 @@
                     callback( cache.get('projects') );
                 }
             }
+        }
 
+        function getIssues(pageCount, pageNumber) {
+            var currentPage = pageNumber || 1;
+            var apiUrl = 'https://api.github.com/search/issues?q=user:Code-for-Miami+state:open&per_page=' + pageCount + '&page=' + currentPage,
+                options = {
+                    headers: {
+                        'user-agent': 'node.js'
+                    }
+                };
+
+            return $http.get(apiUrl, options)
+                .then(function (res) {
+                    // console.log(res.data.items);
+                    return res.data;
+                });
         }
 
         return {
-            getProjects: getProjects
+            getProjects: getProjects,
+            getIssues: getIssues
         };
 
     });
