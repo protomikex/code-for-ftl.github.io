@@ -1,9 +1,9 @@
-div(id="open-issues" class="container" ng-controller="ProjectsController as model" ng-cloak)
+div(id="open-issues" class="container" ng-controller="IssuesController as model" ng-cloak)
     section(class="row")
         div(class="large-8 columns")
-            <dir-pagination-controls on-page-change="model.pageChanged(newPageNumber)"></dir-pagination-controls>
+            <dir-pagination-controls on-page-change="model.getIssues(newPageNumber)"></dir-pagination-controls>
             div
-                div(dir-paginate="issue in model.issues | filter: projectsFilter | filter: issueTypeFilter | filter: issueKeywordFilter | orderBy: 'project.name'| itemsPerPage: model.pageSize" total-items="model.totalCount" current-page="model.currentPage" )
+                div(dir-paginate="issue in model.issues | filter: projectsFilter | filter: issueTypeFilter | filter: issueKeywordFilter | orderBy: 'project.name'| itemsPerPage: model.pageSize" total-items="model.totalCount" current-page="model.currentPage")
                     div(class="issue-info")
                         small(class="text-muted") {{issue.updated_at | date}}
                         h4(class="issue-title")
@@ -11,7 +11,7 @@ div(id="open-issues" class="container" ng-controller="ProjectsController as mode
                         small Project: <a href="{{issue.repository_url}}"> {{issue.repository_url}}
                     span(ng-repeat="label in issue.labels", class="label radius issue-label", style="background-color: #{{label.color}};") {{label.name}}
                     hr(class="hr-emboss")
-            <dir-pagination-controls on-page-change="model.pageChanged(newPageNumber)"></dir-pagination-controls>
+            <dir-pagination-controls on-page-change="model.getIssues(newPageNumber)"></dir-pagination-controls>
         div(class="large-4 columns")
             div
                 select(ng-model="projectsFilter" ng-options="project.html_url as project.name + ' (' + project.open_issues + ')' for project in model.projects | orderBy: 'name'")

@@ -3,7 +3,6 @@ div(id="open-issues", class="container", ng-controller="ProjectsController as mo
     div(class="row")
 
         div(class="large-7 columns")
-
             div(class="row")
                 // Filter Results
                 div(class="large-6 columns")
@@ -18,10 +17,10 @@ div(id="open-issues", class="container", ng-controller="ProjectsController as mo
 
         // Results
         div(class="large-12 columns")
-
+            <dir-pagination-controls on-page-change="model.getProjects(newPageNumber)"></dir-pagination-controls>
             div(class="flex-row flex-wrap")
 
-                    div(class="flex-column-2 flex-row flex-stretch-vertical fade-in", ng-repeat="project in model.projects | filter: languageFilter | filter: userFilter | orderBy: 'project.name'")
+                    div(class="flex-column-2 flex-row flex-stretch-vertical fade-in" dir-paginate="project in model.projects | filter: languageFilter | filter: userFilter | orderBy: 'project.name' | itemsPerPage: model.pageSize" total-items="model.totalCount" current-page="model.currentPage")
                         div(class="panel project-info")
                             h4(class="project-name")
                                 a(ng-href="{{project.html_url}}") {{project.name}}

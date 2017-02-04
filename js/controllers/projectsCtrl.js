@@ -7,7 +7,7 @@
         var model = this;
 
         model.currentPage = 1;
-        model.pageSize = 25;
+        model.pageSize = 10;
 
         model.languageOptions = [
             {'key': 'css', 'value': 'CSS'},
@@ -20,23 +20,15 @@
             {'key': 'ruby', 'value': 'Ruby'}
         ];
 
-        cfaApi.getProjects(function(data) {
-            model.projects = data;
-        });
-
-        model.issues = cfaApi.getIssues(model.pageSize).then(function(res) {
-            console.log('res', res);
-            model.totalCount = res.total_count;
-            model.issues = res.items;
-        });
-
-        model.pageChanged = function(newPage) {
-            model.issues = cfaApi.getIssues(model.pageSize, newPage).then(function(res) {
+        model.getProjects = function(newPage) {
+            cfaApi.getSearch(model.pageSize, newPage, 'repositories').then(function(res) {
                 console.log('res', res);
                 model.totalCount = res.total_count;
-                model.issues = res.items;
+                model.projects = res.items;
             });
         };
+
+        model.getProjects();
     }
 
 }());
