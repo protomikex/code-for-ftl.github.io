@@ -2,7 +2,7 @@
     'use strict';
 
     cfmIssuesApp.factory('cfaApi', function($http) {
-        var brigadeName = 'Code-for-Miami',
+        var brigadeName = 'CodeForFtL',
             apiUrl = 'https://api.github.com/search/';
 
         function getSearch(pageCount, pageNumber, type) {
