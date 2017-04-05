@@ -10,7 +10,7 @@
             var url = apiUrl + type + '?per_page=' + pageCount + '&page=' + currentPage + '&q=user:' + brigadeName,
                 options = {
                     headers: {
-                       'User-Agent': 'Mozilla/5.0 node.js'
+                       'User-Agent': 'node.js'
                     }
                 }; 
 
@@ -20,6 +20,7 @@
                 .then(function (res) {
                     return res.data;
                 });
+            return res.data;
         }
 
         return {
