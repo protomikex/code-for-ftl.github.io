@@ -16,12 +16,13 @@
 
             if(type === 'issues') url = url + '+state:open';
 
-            return $http.get(url, options)
+            return $http.jsonp(url, options)
                 .then(function (res) {
                     return res.data;
                 });
            
         }
+                         
 
         return {
             getSearch: getSearch
