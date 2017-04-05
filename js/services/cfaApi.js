@@ -10,8 +10,8 @@
             var url = apiUrl + type + '?per_page=' + pageCount + '&page=' + currentPage + '&q=user:' + brigadeName,
                options = {
                     headers: {
-                       'User-Agent': 'node.js',
-                        'Content-Type': 'application/x-www-form-urlencoded'
+                       //'User-Agent': 'node.js'
+                      
                     }
                 }; 
 
