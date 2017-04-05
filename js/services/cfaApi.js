@@ -3,7 +3,7 @@
 
     cfmIssuesApp.factory('cfaApi', function($http) {
         var brigadeName = 'CodeForFtL',
-            apiUrl = 'https://api.github.com/search/';
+            apiUrl = 'http://api.github.com/search/';
 
         function getSearch(pageCount, pageNumber, type) {
             var currentPage = pageNumber || 1;
