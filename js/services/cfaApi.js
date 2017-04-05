@@ -20,7 +20,7 @@
                 .then(function (res) {
                     return res.data;
                 });
-            return res.data;
+           
         }
 
         return {
