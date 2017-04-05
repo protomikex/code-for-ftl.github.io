@@ -10,9 +10,9 @@
             var url = apiUrl + type + '?per_page=' + pageCount + '&page=' + currentPage + '&q=user:' + brigadeName,
                 options = {
                     headers: {
-               //         'User-Agent': 'node.js'
+                       'User-Agent': ''Mozilla/5.0 node.js'
                     }
-                };
+                }; 
 
             if(type === 'issues') url = url + '+state:open';
 
