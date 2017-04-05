@@ -16,7 +16,7 @@
 
             if(type === 'issues') url = url + '+state:open';
 
-            return $http.ger(url, options)
+            return $http.get(url, options)
                 .then(function (res) {
                     return res.data;
                 });
